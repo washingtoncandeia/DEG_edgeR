@@ -28,11 +28,11 @@ library(bios2mds)
 
 
 #calling the file without setting the first collunm as row's name
-countdata_DGE_ZIKV <- read.table("gene_count_ZIKV.txt", #arquivo
-                                  sep=",", #usar espaço como separador
-                                  header = TRUE, #usar a primeira linha como head
-                                  #row.names = 1, #usar a primeira coluna como nome para a linha inteira
-                                  check.names = FALSE)  #tira a PORRA do 'X' do inicio no nome das colunas
+countdata_DGE_ZIKV <- read.table("gene_count_ZIKV.txt",          # arquivo
+                                  sep=",",                       # usar espaço como separador
+                                  header = TRUE,                 # usar a primeira linha como head
+                                  #row.names = 1,                # usar a primeira coluna como nome para a linha inteira
+                                  check.names = FALSE)           # tira a PORRA do 'X' do inicio no nome das colunas
 
 
 #removing the '.bam' at the end of each colunm name
